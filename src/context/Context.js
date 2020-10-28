@@ -12,7 +12,7 @@ function ContextProvider({ children }) {
       .then((data) => {
         setAllPhotos(data);
       });
-  }, [allPhotos]);
+  }, []);
 
   function toggleIsFavorite(id) {
     const updatedArray = allPhotos.map((photo) => {
